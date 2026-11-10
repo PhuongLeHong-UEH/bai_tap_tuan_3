@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lê Hồng Phương - Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    :root { --teal: #00675a; --teal-dark: #004a41; --orange: #f58220; --bg: #f4f7f6; --ink: #1d2b29; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: "Segoe UI", Arial, sans-serif; background: var(--bg); color: var(--ink); line-height: 1.6; }
+
+    /* ===== Hero ===== */
+    .hero {
+      background: linear-gradient(135deg, var(--teal-dark), var(--teal));
+      color: #fff; text-align: center; padding: 60px 20px 90px;
+    }
+    .avatar {
+      width: 190px; height: 190px; border-radius: 50%;
+      object-fit: cover; object-position: 50% 36%;
+      border: 6px solid #fff; box-shadow: 0 8px 24px rgba(0,0,0,.3);
+    }
+    .hero h1 { margin: 20px 0 4px; font-size: 38px; letter-spacing: 1px; }
+    .hero .role { margin: 0; font-size: 18px; color: #ffd9b3; font-weight: 600; }
+    .hero .school { margin: 6px 0 0; opacity: .9; }
+
+    .social { list-style: none; padding: 0; margin: 26px 0 0; display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; }
+    .social a {
+      width: 46px; height: 46px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      background: rgba(255,255,255,.15); color: #fff; font-size: 20px; text-decoration: none;
+      transition: transform .2s, background .2s;
+    }
+    .social a:hover { background: var(--orange); transform: translateY(-4px); }
+
+    /* ===== Nội dung ===== */
+    main { max-width: 1000px; margin: -50px auto 40px; padding: 0 20px; }
+    .about { background: #fff; border-radius: 14px; padding: 24px 28px; box-shadow: 0 4px 16px rgba(0,0,0,.1); }
+    .about h2 { margin-top: 0; color: var(--teal); }
+    .about ul { margin: 0; padding-left: 20px; }
+
+    h2.section-title { text-align: center; color: var(--teal); margin: 44px 0 20px; font-size: 28px; }
+    h2.section-title::after { content: ""; display: block; width: 50px; height: 3px; background: var(--orange); margin: 8px auto 0; }
+
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 18px; }
+    .card {
+      display: block; background: #fff; border-radius: 12px; padding: 18px 20px;
+      text-decoration: none; color: inherit; border-top: 5px solid var(--teal);
+      box-shadow: 0 2px 8px rgba(0,0,0,.1); transition: transform .2s, box-shadow .2s, border-color .2s;
+    }
+    .card:hover { transform: translateY(-5px); box-shadow: 0 8px 20px rgba(0,0,0,.18); border-color: var(--orange); }
+    .card .num { font-size: 13px; font-weight: bold; color: var(--orange); text-transform: uppercase; letter-spacing: 1px; }
+    .card h3 { margin: 4px 0 6px; font-size: 18px; color: var(--teal); }
+    .card p { margin: 0; font-size: 14px; color: #555; }
+    .card i { float: right; font-size: 26px; color: var(--teal); opacity: .8; }
+
+    footer { text-align: center; padding: 24px; color: #fff; background: var(--teal-dark); font-size: 14px; }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <img class="avatar" src="images/avatar.jpg" alt="Ảnh đại diện Lê Hồng Phương">
+    <h1>LÊ HỒNG PHƯƠNG</h1>
+    <p class="role">E-Commerce - UEH</p>
+    <p class="school">Sinh viên Đại học Kinh tế TP.HCM (UEH)</p>
+
+    <!-- TODO: thay dấu # bằng link mạng xã hội thật của bạn -->
+    <ul class="social">
+      <li><a href="#" title="Facebook" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+      <li><a href="#" title="Instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+      <li><a href="#" title="GitHub" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
+      <li><a href="#" title="LinkedIn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+      <li><a href="#" title="TikTok" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a></li>
+    </ul>
+  </header>
+
+  <main>
+    <section class="about">
+      <h2><i class="fa-solid fa-user"></i> Giới thiệu</h2>
+      <ul>
+        <li><strong>Họ tên:</strong> Lê Hồng Phương</li>
+        <li><strong>Ngành:</strong> E-Commerce (Thương mại điện tử) - UEH</li>
+        <li><strong>Môn học:</strong> Phát triển ứng dụng WEB/TMĐT - GV: TS Nguyễn Mạnh Tuấn</li>
+        <li><strong>Nội dung:</strong> Bài tập về nhà CSS (Tuần 3)</li>
+      </ul>
+    </section>
+
+    <h2 class="section-title">Các bài tập đã làm</h2>
+    <div class="grid">
+      <a class="card" href="BaiTap1.html"><i class="fa-solid fa-gamepad"></i><span class="num">Bài tập 1</span><h3>Hai game học CSS</h3><p>CSS Diner &amp; CSS Speed Run - hình minh chứng hoàn thành.</p></a>
+      <a class="card" href="BaiTap2.html"><i class="fa-solid fa-font"></i><span class="num">Bài tập 2</span><h3>Định dạng đoạn văn</h3><p>Màu chữ, viền, nền, text-shadow, overflow, ellipsis.</p></a>
+      <a class="card" href="BaiTap3.html"><i class="fa-solid fa-list-check"></i><span class="num">Bài tập 3</span><h3>Lựa chọn bài 3b</h3><p>Hoàn thành các bài 4, 5, 6, 7.</p></a>
+      <a class="card" href="BaiTap4.html"><i class="fa-solid fa-bars"></i><span class="num">Bài tập 4</span><h3>Menu ngang</h3><p>Biến ul/li thành menu với inline-block.</p></a>
+      <a class="card" href="BaiTap5.html"><i class="fa-solid fa-server"></i><span class="num">Bài tập 5</span><h3>Landing page Hosting</h3><p>Căn giữa, nút bấm, bỏ gạch chân liên kết.</p></a>
+      <a class="card" href="BaiTap6.html"><i class="fa-solid fa-images"></i><span class="num">Bài tập 6</span><h3>My Portfolio</h3><p>Tab danh mục và lưới ảnh 3 cột.</p></a>
+      <a class="card" href="BaiTap7.html"><i class="fa-solid fa-table-columns"></i><span class="num">Bài tập 7</span><h3>Bố cục trang</h3><p>wrapper, header, nav, main, footer.</p></a>
+      <a class="card" href="BaiTap8.html"><i class="fa-solid fa-hat-wizard"></i><span class="num">Bài tập 8a</span><h3>Heroes of JavaScript and HTML</h3><p>Định dạng từ file css1: position, z-index, overlay.</p></a>
+      <a class="card" href="BaiTap8b.html"><i class="fa-solid fa-mask"></i><span class="num">Bài tập 8b</span><h3>The Bat family</h3><p>Định dạng từ file css2: hover Read more, tăng chiều rộng.</p></a>
+      <a class="card" href="BaiTap9.html"><i class="fa-solid fa-icons"></i><span class="num">Bài tập 9</span><h3>Font Awesome</h3><p>Thêm icon đẹp vào landing page.</p></a>
+    </div>
+  </main>
+
+  <footer>&copy; 2026 Lê Hồng Phương - E-Commerce UEH</footer>
+</body>
+</html>

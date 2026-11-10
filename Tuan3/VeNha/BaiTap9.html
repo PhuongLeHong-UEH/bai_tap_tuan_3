@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bài tập 9 - Font Awesome</title>
+  <!-- Font Awesome 6 qua CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    body { font-family: Arial, Helvetica, sans-serif; margin: 0; padding: 20px; color: #333; }
+    .back { color: #00675a; text-decoration: none; font-weight: bold; }
+
+    .best-shared { text-align: center; max-width: 900px; margin: 0 auto; }
+    .best-shared .logo { margin: 30px 0 10px; }
+    .best-shared h2 { font-size: 44px; font-weight: normal; margin: 20px 0; }
+    .best-shared h2 strong { color: #00aeef; }
+    .best-shared .lead-text { font-size: 14px; color: #555; margin: 20px 0; }
+
+    .btn-list { list-style: none; margin: 30px 0; padding: 0; }
+    .btn-list li { display: inline-block; margin: 0 10px; }
+    .btn-list a {
+      display: inline-block; padding: 14px 26px; background: #2b2f33; color: #fff;
+      font-size: 14px; text-decoration: none; border-radius: 4px;
+    }
+    .btn-list a i { margin-right: 8px; }
+    .btn-list a:hover { background: #00aeef; }
+
+    /* hàng icon tính năng */
+    .features { list-style: none; margin: 50px 0 0; padding: 0; display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; }
+    .features li { width: 180px; padding: 20px 10px; border: 1px solid #e3e3e3; border-radius: 10px; }
+    .features i { font-size: 40px; color: #00aeef; margin-bottom: 12px; }
+    .features li:hover { box-shadow: 0 4px 14px rgba(0,0,0,.15); }
+    .features li:hover i { color: #f58220; }
+    .features span { display: block; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <a class="back" href="index.html"><i class="fa-solid fa-arrow-left"></i> Về trang chủ</a>
+
+  <section class="best-shared">
+    <p class="logo"><img style="width:200px" src="images/bit-ueh-logo.png" alt="Logo BIT - UEH"></p>
+    <h2>Best <strong>Shared Hosting</strong> Company</h2>
+    <p class="lead-text">With this responsive landing page template, you can promote your all hosting, domain and email services.</p>
+
+    <ul class="btn-list">
+      <li><a href="./"><i class="fa-solid fa-tags"></i>View Plans</a></li>
+      <li><a href="./"><i class="fa-solid fa-list-check"></i>All Features</a></li>
+    </ul>
+
+    <ul class="features">
+      <li><i class="fa-solid fa-server"></i><span>Hosting</span></li>
+      <li><i class="fa-solid fa-globe"></i><span>Domain</span></li>
+      <li><i class="fa-solid fa-envelope"></i><span>Email</span></li>
+      <li><i class="fa-solid fa-shield-halved"></i><span>Security</span></li>
+      <li><i class="fa-solid fa-headset"></i><span>24/7 Support</span></li>
+    </ul>
+  </section>
+</body>
+</html>
