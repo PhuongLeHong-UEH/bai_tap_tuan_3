@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lab 10 - Exercise 10.1</title>
+    <link rel="stylesheet" href="../../vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/lab10.css">
+    <link rel="stylesheet" href="../../css/lab-nav.css">
+    <!-- Exercise 10.1: nạp jQuery từ CDN (dùng https vì GitHub Pages chạy trên https) -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!-- Nếu CDN không dùng được (mất mạng...) thì nạp bản dự phòng nằm trong repository -->
+    <script type="text/javascript">
+        window.jQuery || document.write('<script src="../js/jquery-3.1.1.min.js"><\/script>');
+    </script>
+</head>
+<body>
+<a class="lab-back" href="../index.html">&larr; Lab 10</a>
+<div class="lab-tag"><b>Lab 10</b> &bull; Exercise 10.1 &ndash; Set up jQuery</div>
+
+<div class="container">
+    <h1>Set up jQuery</h1>
+    <p class="lead">Trang này nạp jQuery từ CDN và có file dự phòng cục bộ nếu CDN không dùng được.</p>
+
+    <div id="jqStatus" class="alert alert-warning">jQuery chưa được nạp.</div>
+
+    <h3>Đoạn mã đặt trong thẻ &lt;head&gt;</h3>
+<pre>&lt;script src="https://code.jquery.com/jquery-3.1.1.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+  window.jQuery || document.write('&lt;script src="../js/jquery-3.1.1.min.js"&gt;&lt;\/script&gt;');
+&lt;/script&gt;</pre>
+</div>
+
+<script type="text/javascript" language="javascript" src="script.js"></script>
+</body>
+</html>

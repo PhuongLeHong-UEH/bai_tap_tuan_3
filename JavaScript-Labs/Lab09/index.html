@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lab 09 - JavaScript 2: DOM and Events</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <a class="brand" href="../index.html">JS<span>Labs</span> &middot; LHP</a>
+      <ul class="nav-links" style="display:flex">
+        <li><a href="../Lab08/">Lab 08</a></li>
+        <li><a href="../Lab09/" class="active">Lab 09</a></li>
+        <li><a href="../Lab10/">Lab 10</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="lab-hero">
+    <div class="container">
+      <div class="crumb"><a href="../index.html">Trang chủ</a> / Lab 09</div>
+      <h1>Lab 09: JavaScript 2: DOM and Events</h1>
+      <p>Chọn và thay đổi các phần tử của trang qua DOM, xử lý sự kiện và kiểm tra dữ liệu trong Form.</p>
+      <ul class="learn-list"><li>Chọn phần tử, đổi nội dung và kiểu hiển thị</li><li>Tạo, thêm và xóa phần tử DOM</li><li>Sự kiện click, mouseover, load, focus, blur, submit và kiểm tra Form</li></ul>
+    </div>
+  </section>
+
+  <main class="container">
+    <div class="ex-grid">
+        <div class="ex-card">
+          <div class="ex-num">9.1</div>
+          <div class="ex-body">
+            <h3>Exercise 9.1: Basic DOM selection</h3>
+            <p>Chọn phần tử bằng id, thẻ, class, querySelector; đọc và đổi nội dung, thuộc tính, style.</p>
+            <div class="ex-links"><a class="primary" href="Exercise01/index.html">Xem kết quả</a> <a href="Exercise01/script.js">Mã nguồn</a></div>
+          </div>
+        </div>
+        <div class="ex-card">
+          <div class="ex-num">9.2</div>
+          <div class="ex-body">
+            <h3>Exercise 9.2: DOM family relations</h3>
+            <p>Duyệt childNodes, firstChild, nextSibling, parentNode và tô màu các node thẻ (mở Console).</p>
+            <div class="ex-links"><a class="primary" href="Exercise02/index.html">Xem kết quả</a> <a href="Exercise02/script.js">Mã nguồn</a></div>
+          </div>
+        </div>
+        <div class="ex-card">
+          <div class="ex-num">9.3</div>
+          <div class="ex-body">
+            <h3>Exercise 9.3: Modifying the DOM</h3>
+            <p>Tạo thẻ p mới bằng createElement và xóa một thẻ li bằng removeChild.</p>
+            <div class="ex-links"><a class="primary" href="Exercise03/index.html">Xem kết quả</a> <a href="Exercise03/script.js">Mã nguồn</a></div>
+          </div>
+        </div>
+        <div class="ex-card">
+          <div class="ex-num">9.4</div>
+          <div class="ex-body">
+            <h3>Exercise 9.4: Simple event handling</h3>
+            <p>Nút ẩn/hiện đoạn văn và hiệu ứng xám khi rê chuột lên hình bằng addEventListener.</p>
+            <div class="ex-links"><a class="primary" href="Exercise04/index.html">Xem kết quả</a> <a href="Exercise04/script.js">Mã nguồn</a></div>
+          </div>
+        </div>
+        <div class="ex-card">
+          <div class="ex-num">9.5</div>
+          <div class="ex-body">
+            <h3>Exercise 9.5: Responding to load events</h3>
+            <p>Dùng sự kiện load để chỉ chạy code khi DOM đã tải xong.</p>
+            <div class="ex-links"><a class="primary" href="Exercise05/index.html">Xem kết quả</a> <a href="Exercise05/script.js">Mã nguồn</a></div>
+          </div>
+        </div>
+        <div class="ex-card">
+          <div class="ex-num">9.6</div>
+          <div class="ex-body">
+            <h3>Exercise 9.6: Debugging events</h3>
+            <p>Gắn sự kiện mouseover cho nhiều ô và dùng breakpoint của DevTools để gỡ lỗi.</p>
+            <div class="ex-links"><a class="primary" href="Exercise06/index.html">Xem kết quả</a> <a href="Exercise06/script.js">Mã nguồn</a></div>
+          </div>
+        </div>
+        <div class="ex-card">
+          <div class="ex-num">9.7</div>
+          <div class="ex-body">
+            <h3>Exercise 9.7: Working with forms</h3>
+            <p>Đổi màu nền ô nhập khi nhận focus và mất focus.</p>
+            <div class="ex-links"><a class="primary" href="Exercise07/index.html">Xem kết quả</a> <a href="Exercise07/script.js">Mã nguồn</a></div>
+          </div>
+        </div>
+        <div class="ex-card">
+          <div class="ex-num">9.8</div>
+          <div class="ex-body">
+            <h3>Exercise 9.8: Form validation</h3>
+            <p>Kiểm tra ô trống khi submit, dùng preventDefault và hiện lỗi trong trang.</p>
+            <div class="ex-links"><a class="primary" href="Exercise08/index.html">Xem kết quả</a> <a href="Exercise08/script.js">Mã nguồn</a></div>
+          </div>
+        </div>
+    </div>
+
+    <div class="pager"><a href="../Lab08/">&larr; Lab 08: Language Foundations</a><a href="../Lab10/">Lab 10: jQuery &rarr;</a></div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; Lê Hồng Phương &ndash; E-Commerce, UEH &middot; Phát triển ứng dụng TMĐT</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,29 @@
+/* Thanh điều hướng nhỏ dùng chung cho tất cả các trang Exercise.
+   - .lab-back : nút quay về danh sách Exercise của Lab (góc trên bên phải)
+   - .lab-tag  : nhãn tên Exercise (góc dưới bên trái) giúp chụp ảnh minh chứng dễ nhận biết */
+.lab-back, .lab-tag {
+  position: fixed;
+  z-index: 99999;
+  font: 600 13px/1 Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .3);
+}
+.lab-back {
+  top: 10px;
+  right: 10px;
+  padding: 9px 14px;
+  border-radius: 20px;
+  background: #00675a;
+  color: #fff;
+}
+.lab-back:hover { background: #f58220; color: #fff; text-decoration: none; }
+.lab-tag {
+  left: 10px;
+  bottom: 10px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background: rgba(33, 33, 33, .88);
+  color: #fff;
+  font-weight: 400;
+}
+.lab-tag b { color: #ffb74d; }

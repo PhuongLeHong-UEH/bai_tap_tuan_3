@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lab 10 - Exercise 10.10</title>
+    <link rel="stylesheet" href="../css/consume.css">
+    <link rel="stylesheet" href="../../css/lab-nav.css">
+    <style>
+        body { font-family: Arial, Helvetica, sans-serif; padding: 20px; }
+        #consume { padding: 8px 18px; }
+        .note { color: #b45f06; font-style: italic; }
+        .hint { color: #666; font-size: 13px; max-width: 560px; }
+    </style>
+    <!-- Exercise 10.1: nạp jQuery từ CDN (dùng https vì GitHub Pages chạy trên https) -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!-- Nếu CDN không dùng được (mất mạng...) thì nạp bản dự phòng nằm trong repository -->
+    <script type="text/javascript">
+        window.jQuery || document.write('<script src="../js/jquery-3.1.1.min.js"><\/script>');
+    </script>
+</head>
+<body>
+<a class="lab-back" href="../index.html">&larr; Lab 10</a>
+<div class="lab-tag"><b>Lab 10</b> &bull; Exercise 10.10 &ndash; jqXHR handling (done / fail / always)</div>
+
+<h2>Xử lý kết quả bằng đối tượng jqXHR</h2>
+<p class="hint">Hãy mở trang qua GitHub Pages hoặc Live Server (không mở trực tiếp bằng file://). Biểu tượng loading hiện trong lúc chờ dữ liệu; nếu web service gốc lỗi, hàm fail() báo lỗi rồi dùng dữ liệu dự phòng.</p>
+<button id="consume">Consume</button>
+<div id="results">
+    <ul></ul>
+</div>
+<div class="animLoading"><img src="../images/ajax-loader.gif" /></div>
+
+<script type="text/javascript" language="javascript" src="script.js"></script>
+</body>
+</html>

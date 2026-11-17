@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lab 08 - JavaScript 1: Language Foundations</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <a class="brand" href="../index.html">JS<span>Labs</span> &middot; LHP</a>
+      <ul class="nav-links" style="display:flex">
+        <li><a href="../Lab08/" class="active">Lab 08</a></li>
+        <li><a href="../Lab09/">Lab 09</a></li>
+        <li><a href="../Lab10/">Lab 10</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="lab-hero">
+    <div class="container">
+      <div class="crumb"><a href="../index.html">Trang chủ</a> / Lab 08</div>
+      <h1>Lab 08: JavaScript 1: Language Foundations</h1>
+      <p>Nền tảng của ngôn ngữ JavaScript: nhúng script vào trang, dùng Console, các đối tượng có sẵn, mảng, hàm và đối tượng tự tạo.</p>
+      <ul class="learn-list"><li>Nhúng JavaScript trực tiếp và bằng file ngoài, dùng noscript</li><li>Dùng Console để xem lỗi và thử lệnh</li><li>String, Date, Math, mảng, hàm, đối tượng, mảng các đối tượng</li></ul>
+    </div>
+  </section>
+
+  <main class="container">
+    <div class="ex-grid">
+        <div class="ex-card">
+          <div class="ex-num">8.1</div>
+          <div class="ex-body">
+            <h3>Exercise 8.1: Enabling/Disabling JavaScript</h3>
+            <p>Trang báo JavaScript đang bật hay tắt; hướng dẫn tắt JavaScript trong trình duyệt để kiểm tra.</p>
+            <div class="ex-links"><a class="primary" href="Exercise01/index.html">Xem kết quả</a> <a href="Exercise01/script.js">Mã nguồn</a></div>
+          </div>
+        </div>
+        <div class="ex-card">
+          <div class="ex-num">8.2</div>
+          <div class="ex-body">
+            <h3>Exercise 8.2: Embedded JavaScript</h3>
+            <p>Viết JavaScript trực tiếp trong thẻ script ở head và hiện hộp thoại alert.</p>
+            <div class="ex-links"><a class="primary" href="Exercise02/index.html">Xem kết quả</a> <a href="Exercise02/index.html">Mã nguồn</a></div>
+          </div>
+        </div>
+        <div class="ex-card">
+          <div class="ex-num">8.3</div>
+          <div class="ex-body">
+            <h3>Exercise 8.3: External JavaScript</h3>
+            <p>Đưa mã vào file hello.js bên ngoài và dùng document.write để in nội dung.</p>
+            <div class="ex-links"><a class="primary" href="Exercise03/index.html">Xem kết quả</a> <a href="Exercise03/hello.js">Mã nguồn</a></div>
+          </div>
+        </div>
+        <div class="ex-card">
+          <div class="ex-num">8.4</div>
+          <div class="ex-body">
+            <h3>Exercise 8.4: Using noscript</h3>
+            <p>Thêm thẻ noscript hiện nội dung dự phòng khi trình duyệt tắt JavaScript.</p>
+            <div class="ex-links"><a class="primary" href="Exercise04/index.html">Xem kết quả</a> <a href="Exercise04/index.html">Mã nguồn</a></div>
+          </div>
+        </div>
+        <div class="ex-card">
+          <div class="ex-num">8.5</div>
+          <div class="ex-body">
+            <h3>Exercise 8.5: Using the Browser Console</h3>
+            <p>Dùng console.log/warn/error, thử lệnh và sửa lỗi gõ sai trong Console (nhấn F12).</p>
+            <div class="ex-links"><a class="primary" href="Exercise05/index.html">Xem kết quả</a> <a href="Exercise05/js/hello.js">Mã nguồn</a></div>
+          </div>
+        </div>
+        <div class="ex-card">
+          <div class="ex-num">8.6</div>
+          <div class="ex-body">
+            <h3>Exercise 8.6: Using built-in JavaScript objects</h3>
+            <p>Thử đối tượng String, Date và Math; so sánh == với ===.</p>
+            <div class="ex-links"><a class="primary" href="Exercise06/index.html">Xem kết quả</a> <a href="Exercise06/script.js">Mã nguồn</a></div>
+          </div>
+        </div>
+        <div class="ex-card">
+          <div class="ex-num">8.7</div>
+          <div class="ex-body">
+            <h3>Exercise 8.7: Arrays</h3>
+            <p>Tạo mảng, push/unshift, duyệt mảng và in lịch tháng bằng bảng HTML.</p>
+            <div class="ex-links"><a class="primary" href="Exercise07/index.html">Xem kết quả</a> <a href="Exercise07/script.js">Mã nguồn</a></div>
+          </div>
+        </div>
+        <div class="ex-card">
+          <div class="ex-num">8.8</div>
+          <div class="ex-body">
+            <h3>Exercise 8.8: JavaScript functions</h3>
+            <p>Viết hàm outputBox có tham số, giá trị trả về; phạm vi biến toàn cục và cục bộ.</p>
+            <div class="ex-links"><a class="primary" href="Exercise08/index.html">Xem kết quả</a> <a href="Exercise08/script.js">Mã nguồn</a></div>
+          </div>
+        </div>
+        <div class="ex-card">
+          <div class="ex-num">8.9</div>
+          <div class="ex-body">
+            <h3>Exercise 8.9: Functions as objects</h3>
+            <p>Hàm ẩn danh, gán hàm vào biến và truyền hàm làm tham số để tính tổng tiền.</p>
+            <div class="ex-links"><a class="primary" href="Exercise09/index.html">Xem kết quả</a> <a href="Exercise09/script.js">Mã nguồn</a></div>
+          </div>
+        </div>
+        <div class="ex-card">
+          <div class="ex-num">8.10</div>
+          <div class="ex-body">
+            <h3>Exercise 8.10: Creating JavaScript objects</h3>
+            <p>5 cách tạo đối tượng order, constructor function và phương thức output().</p>
+            <div class="ex-links"><a class="primary" href="Exercise10/index.html">Xem kết quả</a> <a href="Exercise10/script.js">Mã nguồn</a></div>
+          </div>
+        </div>
+        <div class="ex-card">
+          <div class="ex-num">8.11</div>
+          <div class="ex-body">
+            <h3>Exercise 8.11: Arrays of objects</h3>
+            <p>Mảng các đối tượng Country, duyệt bằng for và for...in, hiển thị kèm cờ quốc gia.</p>
+            <div class="ex-links"><a class="primary" href="Exercise11/index.html">Xem kết quả</a> <a href="Exercise11/script.js">Mã nguồn</a></div>
+          </div>
+        </div>
+        <div class="ex-card extra">
+          <div class="ex-num">+</div>
+          <div class="ex-body">
+            <h3>Bài mở rộng: giao diện bài viết du lịch</h3>
+            <p>Thay danh sách HTML viết tay bằng hàm JavaScript tạo giao diện từ mảng dữ liệu (châu lục, quốc gia, bài viết, phân trang).</p>
+            <div class="ex-links"><a class="primary" href="ExtraExercise/index.html">Xem kết quả</a> <a href="ExtraExercise/script.js">Mã nguồn: script.js</a> <a href="ExtraExercise/../js/travel-data.js">Mã nguồn: travel-data.js</a></div>
+          </div>
+        </div>
+    </div>
+
+    <div class="pager"><a href="../index.html">&larr; Trang chủ</a><a href="../Lab09/">Lab 09: DOM and Events &rarr;</a></div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; Lê Hồng Phương &ndash; E-Commerce, UEH &middot; Phát triển ứng dụng TMĐT</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lab 10 - JavaScript 3: jQuery</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <a class="brand" href="../index.html">JS<span>Labs</span> &middot; LHP</a>
+      <ul class="nav-links" style="display:flex">
+        <li><a href="../Lab08/">Lab 08</a></li>
+        <li><a href="../Lab09/">Lab 09</a></li>
+        <li><a href="../Lab10/" class="active">Lab 10</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="lab-hero">
+    <div class="container">
+      <div class="crumb"><a href="../index.html">Trang chủ</a> / Lab 10</div>
+      <h1>Lab 10: JavaScript 3: jQuery</h1>
+      <p>Dùng thư viện jQuery để chọn phần tử, xử lý sự kiện, thêm phần tử, tạo hiệu ứng và gửi GET request.</p>
+      <ul class="learn-list"><li>Cài jQuery bằng CDN kèm bản dự phòng</li><li>Bộ chọn, sự kiện, chèn phần tử DOM, animation</li><li>GET request và xử lý kết quả bằng jqXHR</li></ul>
+    </div>
+  </section>
+
+  <main class="container">
+      <div class="note-box">
+        <strong>Lưu ý:</strong> Exercise 10.9 và 10.10 gửi request bằng AJAX nên hãy mở qua GitHub Pages hoặc Live Server (không mở trực tiếp bằng file://). Nếu web service của giáo trình không truy cập được, trang tự dùng dữ liệu dự phòng trong <code>Lab10/data/cities.json</code>.
+      </div>
+    <div class="ex-grid">
+        <div class="ex-card">
+          <div class="ex-num">10.1</div>
+          <div class="ex-body">
+            <h3>Exercise 10.1: Set up jQuery</h3>
+            <p>Nạp jQuery từ CDN, có file dự phòng trong repo; trang báo phiên bản và nguồn nạp.</p>
+            <div class="ex-links"><a class="primary" href="Exercise01/index.html">Xem kết quả</a> <a href="Exercise01/index.html">Mã nguồn</a></div>
+          </div>
+        </div>
+        <div class="ex-card">
+          <div class="ex-num">10.2</div>
+          <div class="ex-body">
+            <h3>Exercise 10.2: Basic selectors</h3>
+            <p>Chọn theo id, thẻ, class; dùng val, html, attr, css, addClass.</p>
+            <div class="ex-links"><a class="primary" href="Exercise02/index.html">Xem kết quả</a> <a href="Exercise02/script.js">Mã nguồn</a></div>
+          </div>
+        </div>
+        <div class="ex-card">
+          <div class="ex-num">10.3</div>
+          <div class="ex-body">
+            <h3>Exercise 10.3: Advanced selectors</h3>
+            <p>Bộ chọn nâng cao :nth-child và :contains trong form đăng ký.</p>
+            <div class="ex-links"><a class="primary" href="Exercise03/index.html">Xem kết quả</a> <a href="Exercise03/script.js">Mã nguồn</a></div>
+          </div>
+        </div>
+        <div class="ex-card">
+          <div class="ex-num">10.4</div>
+          <div class="ex-body">
+            <h3>Exercise 10.4: jQuery listeners</h3>
+            <p>Xử lý mousemove, mouseleave, click và gỡ sự kiện bằng off().</p>
+            <div class="ex-links"><a class="primary" href="Exercise04/index.html">Xem kết quả</a> <a href="Exercise04/script.js">Mã nguồn</a></div>
+          </div>
+        </div>
+        <div class="ex-card">
+          <div class="ex-num">10.5</div>
+          <div class="ex-body">
+            <h3>Exercise 10.5: Inserting DOM elements</h3>
+            <p>Thử after, before, append, prepend, appendTo, prependTo, insertBefore bằng các nút bấm.</p>
+            <div class="ex-links"><a class="primary" href="Exercise05/index.html">Xem kết quả</a> <a href="Exercise05/script.js">Mã nguồn</a></div>
+          </div>
+        </div>
+        <div class="ex-card">
+          <div class="ex-num">10.6</div>
+          <div class="ex-body">
+            <h3>Exercise 10.6: Simple jQuery animation</h3>
+            <p>Hiệu ứng fadeIn, fadeOut, fadeToggle, slideUp, slideDown, slideToggle.</p>
+            <div class="ex-links"><a class="primary" href="Exercise06/index.html">Xem kết quả</a> <a href="Exercise06/script.js">Mã nguồn</a></div>
+          </div>
+        </div>
+        <div class="ex-card">
+          <div class="ex-num">10.7</div>
+          <div class="ex-body">
+            <h3>Exercise 10.7: More jQuery animation</h3>
+            <p>Khung xem trước ảnh lớn khi rê chuột lên ảnh nhỏ, kèm hiệu ứng fadeIn.</p>
+            <div class="ex-links"><a class="primary" href="Exercise07/index.html">Xem kết quả</a> <a href="Exercise07/script.js">Mã nguồn</a></div>
+          </div>
+        </div>
+        <div class="ex-card">
+          <div class="ex-num">10.8</div>
+          <div class="ex-body">
+            <h3>Exercise 10.8: Complex animations</h3>
+            <p>Nối nhiều lệnh animate() để di chuyển và đổi kích thước một khối.</p>
+            <div class="ex-links"><a class="primary" href="Exercise08/index.html">Xem kết quả</a> <a href="Exercise08/script.js">Mã nguồn</a></div>
+          </div>
+        </div>
+        <div class="ex-card">
+          <div class="ex-num">10.9</div>
+          <div class="ex-body">
+            <h3>Exercise 10.9: GET requests</h3>
+            <p>Gửi GET request bằng $.get() lấy danh sách thành phố dạng JSON và hiển thị.</p>
+            <div class="ex-links"><a class="primary" href="Exercise09/index.html">Xem kết quả</a> <a href="Exercise09/script.js">Mã nguồn</a></div>
+          </div>
+        </div>
+        <div class="ex-card">
+          <div class="ex-num">10.10</div>
+          <div class="ex-body">
+            <h3>Exercise 10.10: jqXHR handling</h3>
+            <p>Xử lý done, fail, always và biểu tượng loading khi gọi web service.</p>
+            <div class="ex-links"><a class="primary" href="Exercise10/index.html">Xem kết quả</a> <a href="Exercise10/script.js">Mã nguồn</a></div>
+          </div>
+        </div>
+    </div>
+
+    <div class="pager"><a href="../Lab09/">&larr; Lab 09: DOM and Events</a><a href="../index.html">Về trang chủ &rarr;</a></div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; Lê Hồng Phương &ndash; E-Commerce, UEH &middot; Phát triển ứng dụng TMĐT</p>
+  </footer>
+</body>
+</html>

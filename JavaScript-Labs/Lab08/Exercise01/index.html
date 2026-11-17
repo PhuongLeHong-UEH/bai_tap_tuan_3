@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Exercise 8.1 - Enabling/Disabling JavaScript</title>
+  <link rel="stylesheet" type="text/css" href="../css/lab08.css">
+  <link rel="stylesheet" type="text/css" href="../../css/lab-nav.css">
+  <style>
+    body { font-family: Arial, Helvetica, sans-serif; max-width: 760px; margin: 0 auto; padding: 20px; }
+    .status { font-size: 28px; font-weight: bold; text-align: center; padding: 28px 10px; border-radius: 10px; margin: 24px 0; }
+    .status.off { background: #fdecea; color: #b71c1c; border: 2px solid #e57373; }
+    .status.on  { background: #e8f5e9; color: #1b5e20; border: 2px solid #66bb6a; }
+    li { margin: 6px 0; }
+    code { background: #eee; padding: 1px 5px; border-radius: 3px; }
+  </style>
+</head>
+<body>
+  <a class="lab-back" href="../index.html">&larr; Lab 08</a>
+  <div class="lab-tag"><b>Lab 08</b> &bull; Exercise 8.1 &ndash; Enabling/Disabling JavaScript</div>
+
+  <header>
+    <h1>Kiểm tra JavaScript đang bật hay tắt</h1>
+  </header>
+
+  <!-- Mặc định HTML ghi "disabled". Nếu JavaScript chạy được, script.js sẽ đổi thành "enabled". -->
+  <div id="jsStatus" class="status off">You have JavaScript disabled</div>
+
+  <h2>Cách bật / tắt JavaScript để kiểm tra</h2>
+  <ul>
+    <li><strong>Chrome / Edge:</strong> nhấn <code>F12</code> &rarr; <code>Ctrl + Shift + P</code> &rarr; gõ <em>Disable JavaScript</em> &rarr; Enter, sau đó tải lại trang (F5). Làm lại với <em>Enable JavaScript</em> để bật lại.</li>
+    <li><strong>Firefox:</strong> mở <code>about:config</code>, tìm <code>javascript.enabled</code> rồi đổi true/false.</li>
+    <li>Trang kiểm tra gốc của giáo trình: <a href="http://examples.funwebdev.com/JavaScriptTest.php" target="_blank" rel="noopener">examples.funwebdev.com/JavaScriptTest.php</a> (nếu còn truy cập được). Trang này là bản tự làm có cùng chức năng.</li>
+  </ul>
+
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
