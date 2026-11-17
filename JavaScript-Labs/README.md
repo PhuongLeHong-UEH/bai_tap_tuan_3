@@ -7,7 +7,8 @@ Bài tập cá nhân môn Phát triển ứng dụng Thương mại điện tử
 - **MSSV:** 31241024012
 - **Lớp học phần:** 26C1INF50902701
 - **GitHub Repository:** https://github.com/PhuongLeHong-UEH/bai_tap_tuan_3
-- **GitHub Pages:** _(điền link sau khi bật Pages)_
+- **GitHub Pages:** https://phuonglehong-ueh.github.io/bai_tap_tuan_3/JavaScript-Labs/ 
+
 
 ## Cấu trúc thư mục
 
