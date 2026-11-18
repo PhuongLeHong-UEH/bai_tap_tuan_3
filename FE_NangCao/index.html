@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài tập trên lớp - Font-End Nâng Cao</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 0 15px;
+      color: #222;
+    }
+
+    h1 {
+      font-size: 22px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 18px;
+      margin-top: 25px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+
+    h3 {
+      font-size: 16px;
+      margin-top: 15px;
+      margin-bottom: 8px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 15px;
+    }
+
+    th, td {
+      border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+      width: 30%;
+    }
+
+    .summary-list {
+      list-style-type: none;
+      padding-left: 10px;
+    }
+
+    .summary-list li {
+      margin-bottom: 6px;
+    }
+
+    code {
+      background-color: #f4f4f4;
+      padding: 2px 4px;
+      border-radius: 3px;
+      font-family: Consolas, monospace;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>BÀI THỰC HÀNH TRÊN LỚP FONT-END NÂNG CAO</h1>
+
+  <h2>Thông tin sinh viên</h2>
+  <table>
+    <tr>
+      <th>Họ và tên</th>
+      <td>Lê Hồng Phương</td>
+    </tr>
+    <tr>
+      <th>Mã số sinh viên</th>
+      <td>31241024012</td>
+    </tr>
+    <tr>
+      <th>Lớp học phần</th>
+      <td>26C1INF50902701</td>
+    </tr>
+    <tr>
+      <th>Giảng viên</th>
+      <td>TS. Nguyễn Mạnh Tuấn</td>
+    </tr>
+    <tr>
+      <th>GitHub Repository</th>
+      <td>
+        <a href="https://github.com/PhuongLeHong-UEH/bai_tap_tuan_3" target="_blank">
+          https://github.com/PhuongLeHong-UEH/bai_tap_tuan_3
+        </a>
+      </td>
+    </tr>
+  </table>
+
+  <h2>Danh sách bài làm</h2>
+  <ul class="summary-list">
+    <li>- <a href="Bai1.html">Bài 1: Thực hành Responsive &amp; thẻ picture (Bai1.html)</a></li>
+  </ul>
+
+  <h2>Tóm tắt nội dung đã học hôm nay</h2>
+
+  <h3>1. Thực hành DevTools qua Game Dino (chrome://dino)</h3>
+  <ul class="summary-list">
+    <li>- Dùng chế độ Responsive trong DevTools để xem giao diện ở kích thước 400 x 521.</li>
+    <li>- Mở tab Sources, tìm từ khóa <code>speed</code>, đặt breakpoint để xem luồng chạy và giá trị biến ở mục Scope, Call Stack.</li>
+    <li>- Dùng tab Console gõ lệnh <code>Runner.instance_.gameOver = function(){}</code> để khủng long chạy xuyên chướng ngại vật mà không bị thua.</li>
+    <li>- Thay đổi tốc độ chạy từ mặc định (~6.8) lên 60 bằng lệnh <code>Runner.instance_.setSpeed(60)</code>.</li>
+    <li>- Thay đổi độ cao cú nhảy bằng lệnh <code>Runner.instance_.tRex.setJumpVelocity(22)</code>.</li>
+  </ul>
+
+  <h3>2. Thiết kế giao diện Responsive (File Bai1.html)</h3>
+  <ul class="summary-list">
+    <li>- Khai báo thẻ <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code> để trang hiển thị chuẩn trên các thiết bị.</li>
+    <li>- Chia bố cục 2 cột <code>.left</code> (70%, nền xanh) và <code>.right</code> (30%, nền đỏ) với chiều cao 400px.</li>
+    <li>- Dùng <code>@media only screen and (max-width: 768px)</code> để cho 2 cột giãn <code>width: 100%</code> và rớt xuống xếp chồng lên nhau khi thu nhỏ màn hình.</li>
+    <li>- Dùng <code>@media only screen and (max-width: 479px) and (min-width: 321px)</code> để ẩn khối <code>.right</code> bằng <code>display: none</code>.</li>
+    <li>- Dùng <code>@media only print</code> để ẩn khối <code>.left</code> và cho khối <code>.right</code> rộng 100% khi in trang.</li>
+    <li>- Dùng thẻ <code>&lt;picture&gt;</code> kết hợp <code>&lt;source media="..."&gt;</code> để đổi logo tự động theo chiều rộng trình duyệt: từ 1000px trở lên hiện logo UEH, từ 600px đến 999px hiện logo CTD, dưới 600px hiện logo BIT.</li>
+  </ul>
+
+</body>
+</html>
