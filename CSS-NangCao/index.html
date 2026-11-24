@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Lab 07 Advanced CSS Layout của Lê Hồng Phương – 19 bài thực hành CSS nâng cao.">
+<title>Lab 07 – Advanced CSS | Lê Hồng Phương</title>
+<link rel="icon" href="images/avatar.jpg">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site-header"><div class="wrap">
+ <a class="brand" href="index.html"><img src="images/avatar.jpg" alt="Ảnh Lê Hồng Phương"><span>Lê Hồng Phương</span></a>
+ <nav class="nav" aria-label="Điều hướng"><a href="#gioi-thieu">Giới thiệu</a><a href="#nhom-bai">Nhóm bài</a><a href="#da-hoc">Đã học</a><a href="#tu-danh-gia">Tự đánh giá</a></nav>
+</div></header>
+<main>
+<section class="hero" id="top"><div class="wrap">
+ <div>
+  <span class="tag">UEH · Phát triển ứng dụng TMĐT</span>
+  <h1>Lab 07 – <span>Advanced CSS</span> Layout</h1>
+  <p class="lead">Tập hợp 19 bài thực hành về định vị, float, bố cục nhiều cột, responsive, hiệu ứng và Bootstrap. Mỗi bài là một trang chạy được trên trình duyệt.</p>
+  <div class="actions"><a class="btn btn-primary" href="#nhom-bai">Xem các bài thực hành</a><a class="btn btn-ghost" href="Lab07/index.html">Danh sách Lab 07</a></div>
+  <div class="stats"><div><b>19</b><span>Exercise</span></div><div><b>5</b><span>Nhóm bài</span></div><div><b>1</b><span>Bootstrap</span></div></div>
+ </div>
+ <aside class="profile" aria-label="Thông tin sinh viên">
+  <img src="images/avatar.jpg" alt="Ảnh đại diện Lê Hồng Phương" width="170" height="170">
+  <h2>Lê Hồng Phương</h2>
+  <p class="sub">Sinh viên E-Commerce – UEH</p>
+  <dl>
+   <div><dt>MSSV</dt><dd>31241024012</dd></div>
+   <div><dt>Lớp học phần</dt><dd>26C1INF50902701</dd></div>
+   <div><dt>Giảng viên</dt><dd>TS. Nguyễn Mạnh Tuấn</dd></div>
+  </dl>
+  <a class="btn btn-primary" href="https://github.com/PhuongLeHong-UEH/bai_tap_tuan_3" target="_blank" rel="noopener noreferrer">GitHub của em ↗</a>
+ </aside>
+</div></section>
+
+<section class="block about" id="gioi-thieu"><div class="wrap">
+ <p class="eyebrow">Giới thiệu</p>
+ <h2 class="title">Lab 07 nói về điều gì?</h2>
+ <div class="cols">
+  <div>
+   <p>Lab 07 – Advanced CSS Layout hướng dẫn cách sắp xếp nội dung trên trang: phần tử nằm ở đâu, chồng lên nhau thế nào, chia thành mấy cột và co giãn ra sao khi đổi kích thước màn hình.</p>
+   <p>Sau khi học xong phần CSS cơ bản, CSS nâng cao giúp trang web không chỉ đúng nội dung mà còn dễ nhìn, dễ dùng trên cả máy tính lẫn điện thoại – điều rất quan trọng với website thương mại điện tử.</p>
+  </div>
+  <div class="role"><h3>Vai trò của CSS nâng cao</h3><ul><li>Dàn trang linh hoạt (float, nhiều cột)</li><li>Responsive với media queries</li><li>Tạo hiệu ứng mượt cho người dùng</li><li>Dựng giao diện nhanh với Bootstrap</li></ul></div>
+ </div>
+</div></section>
+
+<section class="block" id="nhom-bai"><div class="wrap">
+ <p class="eyebrow">Bài thực hành</p>
+ <h2 class="title">5 nhóm bài của Lab 07</h2>
+ <p class="intro">Chọn một nhóm để xem các bài bên trong. Exercise 7.13 được làm ngay trên file của Exercise 7.12 (viewport và menu điều hướng) theo yêu cầu của giảng viên.</p>
+ <div class="groups"><a class="group" href="#nhom1"><small>NHÓM 1 · 7.1 – 7.4</small><strong>Document flow & Positioning</strong><span>display, relative, absolute và z-index: nền tảng định vị phần tử.</span></a><a class="group" href="#nhom2"><small>NHÓM 2 · 7.5 – 7.9</small><strong>Float & Clear</strong><span>float, clear và cách giữ bố cục không bị vỡ.</span></a><a class="group" href="#nhom3"><small>NHÓM 3 · 7.10 – 7.13</small><strong>Layout nhiều cột & Responsive</strong><span>Bố cục 2–3 cột, media queries và viewport cho điện thoại.</span></a><a class="group" href="#nhom4"><small>NHÓM 4 · 7.14 – 7.18</small><strong>Transforms, Transitions, Animations</strong><span>Biến đổi hình, chuyển tiếp mượt, filter và @keyframes.</span></a><a class="group" href="#nhom5"><small>NHÓM 5 · 7.19</small><strong>Bootstrap</strong><span>Dùng grid, navbar và component có sẵn để dựng giao diện nhanh.</span></a></div>
+ <div class="gblock" id="nhom1"><h3>Nhóm 1: Document flow & Positioning <em>Exercise 7.1 – 7.4</em></h3><p>display, relative, absolute và z-index: nền tảng định vị phần tử.</p><div class="cards"><a class="card" href="Lab07/Exercise01/index.html"><span class="num">Exercise 7.01</span><h4>Document Flow</h4><p>Cách phần tử tham gia luồng tài liệu</p><code>display, inline và block</code><span class="go">Mở bài →</span></a><a class="card" href="Lab07/Exercise02/index.html"><span class="num">Exercise 7.02</span><h4>Relative Positioning</h4><p>Di chuyển phần tử nhưng vẫn giữ vị trí gốc</p><code>position: relative</code><span class="go">Mở bài →</span></a><a class="card" href="Lab07/Exercise03/index.html"><span class="num">Exercise 7.03</span><h4>Absolute Positioning</h4><p>Định vị theo phần tử cha gần nhất</p><code>position: absolute</code><span class="go">Mở bài →</span></a><a class="card" href="Lab07/Exercise04/index.html"><span class="num">Exercise 7.04</span><h4>Stacking Using Z-Index</h4><p>Điều khiển thứ tự hiển thị khi chồng lớp</p><code>z-index</code><span class="go">Mở bài →</span></a></div></div>
+<div class="gblock" id="nhom2"><h3>Nhóm 2: Float & Clear <em>Exercise 7.5 – 7.9</em></h3><p>float, clear và cách giữ bố cục không bị vỡ.</p><div class="cards"><a class="card" href="Lab07/Exercise05/index.html"><span class="num">Exercise 7.05</span><h4>Floating Elements</h4><p>Bao chữ quanh phần tử nổi</p><code>float: left / right</code><span class="go">Mở bài →</span></a><a class="card" href="Lab07/Exercise06/index.html"><span class="num">Exercise 7.06</span><h4>Floating in a Container</h4><p>Giữ kích thước vùng chứa phần tử float</p><code>float container</code><span class="go">Mở bài →</span></a><a class="card" href="Lab07/Exercise07/index.html"><span class="num">Exercise 7.07</span><h4>Floating Multiple Items</h4><p>Tạo dãy phần tử float linh hoạt</p><code>multi-float</code><span class="go">Mở bài →</span></a><a class="card" href="Lab07/Exercise08/index.html"><span class="num">Exercise 7.08</span><h4>Floating and Clearing</h4><p>Ngăn phần tử kế tiếp bị tràn bố cục</p><code>clear: both</code><span class="go">Mở bài →</span></a><a class="card" href="Lab07/Exercise09/index.html"><span class="num">Exercise 7.09</span><h4>Using Positioning</h4><p>Đặt caption đè lên hình</p><code>relative / absolute</code><span class="go">Mở bài →</span></a></div></div>
+<div class="gblock" id="nhom3"><h3>Nhóm 3: Layout nhiều cột & Responsive <em>Exercise 7.10 – 7.13</em></h3><p>Bố cục 2–3 cột, media queries và viewport cho điện thoại.</p><div class="cards"><a class="card" href="Lab07/Exercise10/index.html"><span class="num">Exercise 7.10</span><h4>Two-Column Layout</h4><p>Tạo giao diện hai cột bằng float</p><code>2 columns</code><span class="go">Mở bài →</span></a><a class="card" href="Lab07/Exercise11/index.html"><span class="num">Exercise 7.11</span><h4>Three-Column Layout</h4><p>Tạo giao diện ba cột bằng positioning</p><code>3 columns</code><span class="go">Mở bài →</span></a><a class="card" href="Lab07/Exercise12/index.html"><span class="num">Exercise 7.12</span><h4>Media Queries</h4><p>Chuyển đổi bố cục theo thiết bị</p><code>desktop / mobile</code><span class="go">Mở bài →</span></a><a class="card" href="Lab07/Exercise12/index.html#viewport-demo"><span class="num">Exercise 7.13</span><h4>Setting the Viewport</h4><p>Tối ưu hiển thị và menu cho điện thoại</p><code>meta viewport</code><span class="go">Mở bài →</span></a></div></div>
+<div class="gblock" id="nhom4"><h3>Nhóm 4: Transforms, Transitions, Animations <em>Exercise 7.14 – 7.18</em></h3><p>Biến đổi hình, chuyển tiếp mượt, filter và @keyframes.</p><div class="cards"><a class="card" href="Lab07/Exercise14/index.html"><span class="num">Exercise 7.14</span><h4>Transforms</h4><p>Thay đổi hình dạng và vị trí phần tử</p><code>rotate / skew / scale</code><span class="go">Mở bài →</span></a><a class="card" href="Lab07/Exercise15/index.html"><span class="num">Exercise 7.15</span><h4>Transitions</h4><p>Chuyển tiếp mượt khi tương tác</p><code>hover effects</code><span class="go">Mở bài →</span></a><a class="card" href="Lab07/Exercise16/index.html"><span class="num">Exercise 7.16</span><h4>More Transitions</h4><p>Kết hợp nhiều hiệu ứng chuyển tiếp</p><code>multiple transitions</code><span class="go">Mở bài →</span></a><a class="card" href="Lab07/Exercise17/index.html"><span class="num">Exercise 7.17</span><h4>Filters</h4><p>Thực hành các bộ lọc hình ảnh</p><code>grayscale / blur</code><span class="go">Mở bài →</span></a><a class="card" href="Lab07/Exercise18/index.html"><span class="num">Exercise 7.18</span><h4>Animations</h4><p>Tạo chuyển động tự động bằng CSS</p><code>@keyframes</code><span class="go">Mở bài →</span></a></div></div>
+<div class="gblock" id="nhom5"><h3>Nhóm 5: Bootstrap <em>Exercise 7.19</em></h3><p>Dùng grid, navbar và component có sẵn để dựng giao diện nhanh.</p><div class="cards"><a class="card" href="Lab07/Exercise19/index.html"><span class="num">Exercise 7.19</span><h4>Using Bootstrap</h4><p>Làm giao diện với Bootstrap</p><code>grid / navbar</code><span class="go">Mở bài →</span></a></div></div>
+
+</div></section>
+
+<section class="block learn" id="da-hoc"><div class="wrap">
+ <p class="eyebrow">Nhật ký học tập</p>
+ <h2 class="title">Những gì em đã học</h2>
+ <p class="t">Bắt tay vào làm Lab 07 rồi em mới thấy, để một trang web nhìn thuận mắt không chỉ nằm ở chuyện phối màu, mà quan trọng nhất là cách sắp xếp bố cục và chia khoảng cách cho thoáng. Nhờ đụng vào <code>float</code> và <code>positioning</code>, em hiểu rõ hơn cách dàn trang truyền thống hoạt động ra sao; còn <code>media queries</code> với <code>viewport</code> thì giải quyết gọn bài toán hiển thị trên màn hình điện thoại. Ngoài ra, mấy hiệu ứng nhỏ như <code>transforms</code>, <code>transitions</code> hay <code>filters</code> giúp trang web có hồn và đỡ tĩnh hơn hẳn, chưa kể có thêm <code>Bootstrap</code> hỗ trợ nên khâu dựng khung cũng đỡ vất vả hơn trước rất nhiều.</p>
+ <p class="t">Em thấy bộ kiến thức này áp dụng cực kỳ sát với thực tế, nhất là khi làm web bán hàng. Từ việc chia lưới danh mục sản phẩm, làm trang chi tiết, cho tới thiết kế thanh menu tự co giãn trên di động hay tạo hiệu ứng lướt chuột vào thẻ sản phẩm đều dùng tới.</p>
+ <div class="boxes">
+  <div class="lbox"><b>Flow & Positioning</b><span>display, relative, absolute, z-index</span></div>
+  <div class="lbox"><b>Layout</b><span>float, clear, bố cục 2–3 cột</span></div>
+  <div class="lbox"><b>Responsive & Motion</b><span>media queries, transitions, animations</span></div>
+  <div class="lbox"><b>Bootstrap</b><span>grid, navbar, components</span></div>
+ </div>
+</div></section>
+
+<section class="block assess" id="tu-danh-gia"><div class="wrap"><div class="box">
+ <p class="eyebrow">Tự đánh giá</p>
+ <h2 class="title">Tổng kết thực hành</h2>
+ <p>Phần em thấy tâm đắc và hữu ích nhất ở bài này chính là <code>media queries</code>, vì chỉ cần chỉnh đúng là giao diện tự động co giãn mượt mà từ màn hình máy tính sang điện thoại. Ngược lại, phần khiến em tốn nhiều thời gian căn chỉnh nhất là <code>z-index</code> và <code>absolute positioning</code> — chỉ cần lệch một chút là các khối đè lên nhau, vỡ ngay bố cục. Qua bài lab này, em cũng tập được thói quen vừa sửa CSS vừa bật DevTools trên trình duyệt để kéo thử kích thước màn hình và soi lỗi trực tiếp. Sắp tới khi làm các dự án khác, em chắc chắn sẽ ưu tiên tối ưu trải nghiệm di động ngay từ đầu, thêm một chút <code>transitions</code> để thao tác bấm mượt hơn và tận dụng <code>Bootstrap</code> khi cần chạy tiến độ nhanh. Sau cùng, em rút ra là giao diện có làm hiệu ứng cầu kỳ đến đâu thì tiêu chí tiên quyết vẫn phải là dễ nhìn, rõ ràng và chạy ổn định trên mọi thiết bị.</p>
+</div></div></section>
+</main>
+<footer><div class="wrap"><span>Lê Hồng Phương · MSSV 31241024012 · Lớp 26C1INF50902701</span><a href="https://github.com/PhuongLeHong-UEH/bai_tap_tuan_3" target="_blank" rel="noopener noreferrer">GitHub repository ↗</a></div></footer>
+</body>
+</html>

@@ -1,0 +1,33 @@
+/* Giao diện chung cho các trang Exercise. Font hệ thống. */
+:root{--bg:#f6f8fc;--ink:#14263d;--muted:#51647a;--line:#dde5f0;--blue:#2563eb;--blue-d:#1d4ed8;--soft:#e8f0ff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Segoe UI",system-ui,-apple-system,Roboto,"Helvetica Neue",Arial,sans-serif;font-size:17px;line-height:1.7}
+a{color:var(--blue)}
+a:focus-visible,button:focus-visible{outline:3px solid #f59e0b;outline-offset:3px}
+.topbar{background:#fff;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap;padding:14px max(18px,calc((100vw - 1050px)/2));font-size:15px}
+.crumb{color:var(--blue-d);text-decoration:none;font-weight:700;background:var(--soft);padding:7px 14px;border-radius:999px}
+.crumb:hover{background:#d5e4ff}
+.toplabel{color:var(--muted)}
+.toplabel b{color:var(--blue)}
+.lesson{max-width:1050px;margin:auto;padding:40px 20px 64px}
+.eyebrow{text-transform:uppercase;letter-spacing:1.5px;font-size:13px;font-weight:800;color:#0e9594;margin:0}
+.lesson-head h1{font-size:clamp(30px,4.5vw,44px);font-weight:800;margin:6px 0 10px;line-height:1.2}
+.lesson-head p{color:var(--muted);max-width:780px;margin:0 0 24px;font-size:17px}
+.lesson-head p.eyebrow{color:#0e9594;margin:0}
+.example{background:#fff;border-radius:18px;border:1px solid var(--line);box-shadow:0 10px 30px rgba(20,38,61,.07);padding:28px;min-height:260px}
+.example-header{display:flex;justify-content:space-between;gap:20px;align-items:center;border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:24px}
+.example-header strong{font-size:18px}
+.example-header span{font-size:14px;color:var(--muted);text-align:right}
+.takeaway{background:var(--soft);border-left:5px solid var(--blue);border-radius:12px;padding:16px 20px;margin-top:22px}
+.takeaway strong{display:block;font-size:16px;color:var(--blue-d)}
+.takeaway p{margin:4px 0 0;color:#3b4f66;font-size:16px}
+.lesson-nav{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;margin-top:24px}
+.lesson-nav a{background:var(--blue);color:#fff;border-radius:999px;padding:10px 20px;font-weight:700;text-decoration:none;font-size:15px}
+.lesson-nav a:hover{background:var(--blue-d)}
+.footer{text-align:center;color:var(--muted);font-size:14px;padding:26px;border-top:1px solid var(--line);background:#fff}
+.demo-label{font-weight:700;font-size:15px;color:#2b4a66}
+.tile{padding:17px;border:1px solid #9dbcf5;border-radius:10px;background:#dbe8ff;color:#143e8a;font-weight:700;text-align:center}
+.note{font-size:15px;color:var(--muted)}
+.pills{display:flex;flex-wrap:wrap;gap:10px}
+.pill{background:#d6f3f2;color:#0b6b6a;border-radius:100px;padding:5px 14px;font-size:14px;font-weight:700}
+@media(max-width:600px){body{font-size:16.5px}.topbar{padding:12px 16px}.toplabel{font-size:13px}.lesson{padding:24px 12px 48px}.example{padding:18px 14px;border-radius:14px}.example-header{align-items:flex-start;flex-direction:column;gap:4px}.example-header span{text-align:left}.lesson-nav a{flex:1;text-align:center;padding:10px 6px;font-size:14px}}
