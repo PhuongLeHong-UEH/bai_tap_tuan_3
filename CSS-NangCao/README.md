@@ -8,7 +8,7 @@
 | Mã lớp học phần | **26C1INF50902701** |
 | Giảng viên | **TS. Nguyễn Mạnh Tuấn** |
 | Repository | https://github.com/PhuongLeHong-UEH/bai_tap_tuan_3 |
-| GitHub Pages (dự kiến khi bật Pages từ main/root) | https://phuonglehong-ueh.github.io/bai_tap_tuan_3/CSS-NangCao/ |
+| GitHub Pages  | https://phuonglehong-ueh.github.io/bai_tap_tuan_3/CSS-NangCao/ |
 
 ## Mục tiêu
 Thực hành các kỹ thuật bố cục và hiệu ứng CSS nâng cao, hiểu cách làm trang web hiển thị tốt trên nhiều kích thước màn hình.
