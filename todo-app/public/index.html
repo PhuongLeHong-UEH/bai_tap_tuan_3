@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hôm nay · Todo App</title><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%235b5bd6'/%3E%3Cpath d='M28 52l16 16 30-34' stroke='white' stroke-width='11' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css"></head><body><div class="app">
+<aside class="side"><div class="logo"><i>✓</i>TodoApp</div><a class="nav on" href="index.html"><span>🏠</span>Hôm nay</a><a class="nav" href="tasks.html"><span>📋</span>Tất cả công việc</a><a class="nav" href="stats.html"><span>📊</span>Thống kê</a><div class="foot">Node.js · Express · SQLite</div></aside>
+<main>
+<div class="head"><div><h1 id="greet">Xin chào</h1><p id="dateLabel"></p></div><button class="btn" id="addBtn">＋ Thêm công việc</button></div>
+<section class="hero"><div><h2>Tiến độ hôm nay</h2><p id="sum">Đang tải…</p><div class="bar"><b id="barfill" style="width:0"></b></div></div><div class="pct" id="pct">0%</div></section>
+<form class="quick" id="quick"><input type="text" id="qt" maxlength="120" placeholder="Thêm nhanh việc hôm nay, nhấn Enter…" aria-label="Thêm nhanh"><button class="btn" type="submit">Thêm</button></form>
+<div class="filters"><input class="search" type="search" id="q" placeholder="🔍 Tìm công việc…" aria-label="Tìm kiếm">
+<select id="pri" aria-label="Lọc ưu tiên"><option value="">Mọi ưu tiên</option><option value="high">Cao</option><option value="medium">Trung bình</option><option value="low">Thấp</option></select>
+<select id="cat" aria-label="Lọc danh mục"></select></div>
+<div class="chips" id="chips" style="margin-bottom:6px"><button class="chip on" data-s="">Tất cả</button><button class="chip" data-s="todo">Chưa làm</button><button class="chip" data-s="doing">Đang làm</button><button class="chip" data-s="done">Hoàn thành</button></div>
+<div id="out"></div></main></div><script src="js/common.js"></script><script src="js/today.js"></script></body></html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Thống kê · Todo App</title><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%235b5bd6'/%3E%3Cpath d='M28 52l16 16 30-34' stroke='white' stroke-width='11' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css"></head><body><div class="app">
+<aside class="side"><div class="logo"><i>✓</i>TodoApp</div><a class="nav" href="index.html"><span>🏠</span>Hôm nay</a><a class="nav" href="tasks.html"><span>📋</span>Tất cả công việc</a><a class="nav on" href="stats.html"><span>📊</span>Thống kê</a><div class="foot">Node.js · Express · SQLite</div></aside>
+<main>
+<div class="head"><div><h1>Thống kê</h1><p>Tổng quan tiến độ làm việc của bạn</p></div></div>
+<div class="kpis"><div class="card kpi"><span class="ic" style="background:#ecebff">📝</span><small>Tổng công việc</small><b id="k-total">–</b></div>
+<div class="card kpi"><span class="ic" style="background:#dcfae6">✅</span><small>Tỉ lệ hoàn thành</small><b id="k-rate">–</b></div>
+<div class="card kpi"><span class="ic" style="background:#fee4e2">⏰</span><small>Đang quá hạn</small><b id="k-over">–</b></div>
+<div class="card kpi"><span class="ic" style="background:#fef0c7">🔥</span><small>Chuỗi ngày hoàn thành</small><b id="k-streak">–</b></div></div>
+<div class="grid2"><div class="card pad"><h3>Trạng thái công việc</h3><div class="donut-wrap" id="donut"></div></div>
+<div class="card pad"><h3>7 ngày gần nhất</h3><div class="cols" id="week"></div><div class="key"><span><i style="background:#5b5bd6"></i>Hoàn thành</span><span><i style="background:#cbd2e0"></i>Đến hạn</span></div></div></div>
+<div class="grid2"><div class="card pad"><h3>Theo danh mục (xong / tổng)</h3><div id="cats"></div></div><div class="card pad"><h3>Theo mức ưu tiên</h3><div id="pris"></div></div></div></main></div><script src="js/common.js"></script><script src="js/stats.js"></script></body></html>
